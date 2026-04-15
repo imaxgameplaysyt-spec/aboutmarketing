@@ -1,0 +1,71 @@
+{
+  "evento": {
+    "nombre": "About Marketing",
+    "fecha": "26 de marzo",
+    "hora": "18:45h",
+    "lugar": "Salón de Actos",
+    "instituto": "IES Alonso de Avellaneda"
+  },
+  "ponentes": [
+    {
+      "id": 1,
+      "nombre": "Luis Montalvo",
+      "cargo": "Especialista en E-Commerce",
+      "empresa": "Independiente",
+      "bio": "Experto en estrategias de venta online con más de una década optimizando tiendas digitales. Ha ayudado a decenas de marcas a multiplicar su conversión mediante SEO técnico, experiencia de usuario y automatización de embudos de venta que realmente funcionan.",
+      "imagen": "fotos/LuisMontalvo.jpeg",
+      "color": "#FFD700",
+      "redes": {
+        "linkedin": "https://es.linkedin.com/in/luismontalvo/es",
+        "instagram": "https://instagram.com/luisonazo",
+        "X": "https://twitter.com"
+      },
+      "tema": "E-Commerce"
+    },
+    {
+      "id": 2,
+      "nombre": "Inma Novillo",
+      "cargo": "Co-Fundadora & Directora Creativa",
+      "empresa": "You are the Princess",
+      "bio": "Mente creativa detrás de una de las agencias de marketing digital más innovadoras. Especializada en branding emocional y campañas que conectan marcas con audiencias reales, transformando historias en comunidades fieles y negocios sostenibles.",
+      "imagen": "fotos/InmaNovillo.jpeg",
+      "color": "#E63946",
+      "redes": {
+        "linkedin": "https://www.linkedin.com/in/inma-novillo-santos-7342a73a/",
+        "instagram": "https://instagram.com/youaretheprincess",
+        "X": "https://twitter.com/"
+      },
+      "tema": "Marketing Digital"
+    },
+    {
+      "id": 3,
+      "nombre": "Raquel Linde",
+      "cargo": "Co-Fundadora & Estratega Digital",
+      "empresa": "You are the Princess",
+      "bio": "Estratega de marketing con visión de 360°. En You are the Princess lidera proyectos donde los datos y la creatividad conviven en perfecta armonía. Apasionada del growth hacking y de demostrar que el marketing honesto es el más rentable.",
+      "imagen": "fotos/RaquelLinde.jpeg",
+      "color": "#1D3557",
+      "redes": {
+        "linkedin": "https://www.linkedin.com/in/raquel-linde/",
+        "instagram": "https://instagram.com/youaretheprincess",
+        "X": "https://twitter.com/"
+      },
+      "tema": "Marketing Digital"
+    },
+    {
+      "id": 4,
+      "nombre": "Víctor Marín",
+      "cargo": "Director de comunicación y marketing del C.D. Leganés",
+      "empresa": "CD.Leganes",
+      "bio": "irector de comunicación y marketing · Club Deportivo Leganés Director de comunicación y marketing del C.D. Leganés · Experiencia: Club Deportivo Leganés · Educación: Universidad Carlos III de Madrid",
+      "color": "#457B9D",
+      "imagen": "fotos/VictorMarin.jpeg",
+      "redes": {
+        "linkedin": "https://www.linkedin.com",
+        "instagram": "https://instagram.com",
+        "X":"https://x.com/Trenalfuturo"
+      },
+      "tema":"Marketing Digital"
+    }
+  ]
+}

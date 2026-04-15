@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Marketing — IES Alonso de Avellaneda</title>
+  <meta name="description" content="Evento de marketing en el IES Alonso de Avellaneda. 26 de marzo, 18:45h." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ HEADER / NAV ═══════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="About Marketing">
+        <span class="logo-am">am</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#ponentes" class="nav-link">Ponentes</a></li>
+        <li><a href="#agenda" class="nav-link">Agenda</a></li>
+        <li><a href="#multimedia" class="nav-link">Multimedia</a></li>
+        <li><a href="#contacto" class="nav-link nav-link--cta">Asiste</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Presentación del evento">
+      <div class="hero__noise"></div>
+      <div class="hero__stripes" aria-hidden="true">
+        <div class="stripe stripe--yellow"></div>
+        <div class="stripe stripe--red"></div>
+        <div class="stripe stripe--blue"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <span class="badge">IES Alonso de Avellaneda</span>
+          <span class="badge badge--outline">Salón de Actos</span>
+        </div>
+
+        <h1 class="hero__logo-text" aria-label="About Marketing">
+          <span class="logo-big">am</span>
+        </h1>
+
+        <p class="hero__tagline">About Marketing</p>
+
+        <div class="hero__meta">
+          <div class="hero__date">
+            <span class="meta-label">Fecha</span>
+            <strong class="meta-value">26 · Marzo</strong>
+          </div>
+          <div class="hero__divider" aria-hidden="true">✦</div>
+          <div class="hero__time">
+            <span class="meta-label">Hora</span>
+            <strong class="meta-value">18:45 h</strong>
+          </div>
+        </div>
+
+        <a href="#ponentes" class="btn btn--primary hero__cta">
+          Descubre a los ponentes
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero__ticker" aria-hidden="true">
+        <div class="ticker__inner">
+          <span>E-COMMERCE</span>
+          <span>✦</span>
+          <span>MARKETING DIGITAL</span>
+          <span>✦</span>
+          <span>BRANDING</span>
+          <span>✦</span>
+          <span>GROWTH</span>
+          <span>✦</span>
+          <span>ESTRATEGIA</span>
+          <span>✦</span>
+          <span>E-COMMERCE</span>
+          <span>✦</span>
+          <span>MARKETING DIGITAL</span>
+          <span>✦</span>
+          <span>BRANDING</span>
+          <span>✦</span>
+          <span>GROWTH</span>
+          <span>✦</span>
+          <span>ESTRATEGIA</span>
+          <span>✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ PONENTES ═══════════════════════════════ -->
+    <section class="section ponentes" id="ponentes" aria-labelledby="ponentes-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Quiénes hablan</p>
+          <h2 class="section__title" id="ponentes-title">Los Ponentes</h2>
+          <p class="section__subtitle">Profesionales del sector que comparten su experiencia real en el mundo del marketing.</p>
+        </header>
+
+        <!-- JS renderiza las cards aquí -->
+        <div class="ponentes__grid" id="ponentes-grid" role="list" aria-live="polite" aria-label="Lista de ponentes">
+          <!-- cards inyectadas por utils.js -->
+        </div>
+
+        <div class="ponentes__loading" id="ponentes-loading" aria-live="polite">
+          <div class="loader"></div>
+          <p>Cargando ponentes…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ AGENDA ═══════════════════════════════ -->
+    <section class="section agenda" id="agenda" aria-labelledby="agenda-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Calendario de sesiones</p>
+          <h2 class="section__title" id="agenda-title">Agenda</h2>
+          <p class="section__subtitle" style="color:rgba(255,255,255,0.6);">Tres sesiones, tres experiencias. Salón de Actos · IES Alonso de Avellaneda</p>
+        </header>
+
+        <!-- ── SESIÓN 1 · 26 marzo ── -->
+        <div class="agenda__session">
+          <div class="agenda__session-header">
+            <span class="agenda__session-date">26 · Mar</span>
+            <span class="agenda__session-label">Sesión 1</span>
+          </div>
+          <ol class="agenda__list" role="list">
+            <li class="agenda__item">
+              <div class="agenda__time">18:45</div>
+              <div class="agenda__body">
+                <span class="agenda__tag agenda__tag--yellow">Ponencia</span>
+                <h3 class="agenda__event">E-Commerce: del clic a la compra</h3>
+                <p class="agenda__desc">Luis Montalvo — Estrategias para convertir visitas en ventas reales.</p>
+              </div>
+            </li>
+            <li class="agenda__item">
+              <div class="agenda__time">20:45</div>
+              <div class="agenda__body">
+                <span class="agenda__tag">Cierre</span>
+                <h3 class="agenda__event">Q&A y cierre de sesión</h3>
+                <p class="agenda__desc">Preguntas del público y networking con Luis Montalvo.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- ── SESIÓN 2 · 9 abril ── -->
+        <div class="agenda__session">
+          <div class="agenda__session-header">
+            <span class="agenda__session-date">9 · Abr</span>
+            <span class="agenda__session-label">Sesión 2</span>
+          </div>
+          <ol class="agenda__list" role="list">
+            <li class="agenda__item">
+              <div class="agenda__time">18:45</div>
+              <div class="agenda__body">
+                <span class="agenda__tag agenda__tag--red">Ponencia</span>
+                <h3 class="agenda__event">Marketing Digital que conecta de verdad</h3>
+                <p class="agenda__desc">Inma Novillo & Raquel Linde — You are the Princess presenta su visión del marketing emocional.</p>
+              </div>
+            </li>
+            <li class="agenda__item">
+              <div class="agenda__time">20:45</div>
+              <div class="agenda__body">
+                <span class="agenda__tag">Cierre</span>
+                <h3 class="agenda__event">Q&A y cierre de sesión</h3>
+                <p class="agenda__desc">Preguntas del público y networking con Inma y Raquel.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- ── SESIÓN 3 · 23 abril ── -->
+        <div class="agenda__session">
+          <div class="agenda__session-header">
+            <span class="agenda__session-date">23 · Abr</span>
+            <span class="agenda__session-label">Sesión 3</span>
+          </div>
+          <ol class="agenda__list" role="list">
+            <li class="agenda__item">
+              <div class="agenda__time">18:45</div>
+              <div class="agenda__body">
+                <span class="agenda__tag agenda__tag--blue">Ponencia</span>
+                <h3 class="agenda__event">Por confirmar — Víctor Marín</h3>
+                <p class="agenda__desc">Víctor Marín — Próximamente se anunciarán más detalles sobre esta sesión.</p>
+              </div>
+            </li>
+            <li class="agenda__item">
+              <div class="agenda__time">20:45</div>
+              <div class="agenda__body">
+                <span class="agenda__tag">Cierre</span>
+                <h3 class="agenda__event">Q&A, cierre y networking final</h3>
+                <p class="agenda__desc">Momento para conectar con los ponentes y cerrar el ciclo About Marketing.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ MULTIMEDIA ═══════════════════════════════ -->
+    <section class="section multimedia" id="multimedia" aria-labelledby="multimedia-title">
+      <div class="container">
+        <header class="section__header">
+          <p class="section__eyebrow">Galería</p>
+          <h2 class="section__title" id="multimedia-title">Multimedia</h2>
+          <p class="section__subtitle">Fotos y recursos del evento. El contenido se irá actualizando.</p>
+        </header>
+
+        <div class="multimedia__grid">
+          <div class="multimedia__placeholder">
+            <img src="fotos/evento1.png" alt="Fotos del evento." loading="lazy"/>
+          </div>
+          <div class="multimedia__placeholder">
+            <video controls preload="none" poster="fotos/miniatura1.png">
+                <source src="videos/camino.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="multimedia__placeholder">
+            <video controls preload="none" poster="fotos/miniatura.png">
+                <source src="videos/evento.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════ CONTACTO / CTA ═══════════════════════════════ -->
+    <section class="section contacto" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contacto__inner">
+          <h2 class="contacto__title" id="contacto-title">¿Vienes?</h2>
+          <p class="contacto__desc">26 de marzo · 18:45 h · Salón de Actos · IES Alonso de Avellaneda</p>
+          <div class="contacto__actions">
+            <a href="mailto:info@iesalonsoavellaneda.es" class="btn btn--primary">Confirmar asistencia</a>
+            <button class="btn btn--ghost" id="share-btn">Compartir evento</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="logo-am logo-am--small">am</span>
+          <p>About Marketing<br><small>IES Alonso de Avellaneda</small></p>
+        </div>
+        <div class="footer__links">
+          <a href="#ponentes">Ponentes</a>
+          <a href="#agenda">Agenda</a>
+          <a href="#multimedia">Multimedia</a>
+        </div>
+        <div class="footer__info">
+          <p>26 de marzo · 18:45 h</p>
+          <p>Salón de Actos</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 IES Alonso de Avellaneda — Dpto. de Marketing</p>
+        <!-- Trigger oculto para panel de gestión -->
+        <button class="admin-trigger" id="admin-trigger" aria-label="Administración" title="Panel de gestión">⚙</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════ MODAL ADMIN ═══════════════════════════════ -->
+  <div class="modal-overlay" id="admin-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal">
+      <button class="modal__close" id="modal-close" aria-label="Cerrar modal">&times;</button>
+
+      <!-- Pantalla de login -->
+      <div class="modal__screen" id="screen-login">
+        <h2 class="modal__title" id="modal-title">🔐 Panel de Gestión</h2>
+        <p class="modal__subtitle">Introduce la contraseña para continuar</p>
+        <div class="form-group">
+          <label for="admin-password" class="form-label">Contraseña</label>
+          <input type="password" id="admin-password" class="form-input" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <p class="form-error" id="login-error" hidden>Contraseña incorrecta. Inténtalo de nuevo.</p>
+        <button class="btn btn--primary btn--full" id="login-submit">Acceder</button>
+      </div>
+
+      <!-- Pantalla de formulario de nuevo ponente -->
+      <div class="modal__screen" id="screen-form" hidden>
+        <h2 class="modal__title">✨ Añadir Ponente</h2>
+        <p class="modal__subtitle">El nuevo ponente aparecerá junto al resto al guardar.</p>
+
+        <div class="form-group">
+          <label for="f-nombre" class="form-label">Nombre completo *</label>
+          <input type="text" id="f-nombre" class="form-input" placeholder="Ej: Ana García" required />
+        </div>
+        <div class="form-group">
+          <label for="f-cargo" class="form-label">Cargo *</label>
+          <input type="text" id="f-cargo" class="form-input" placeholder="Ej: CEO & Fundadora" required />
+        </div>
+        <div class="form-group">
+          <label for="f-empresa" class="form-label">Empresa *</label>
+          <input type="text" id="f-empresa" class="form-input" placeholder="Ej: Mi Startup SL" required />
+        </div>
+        <div class="form-group">
+          <label for="f-tema" class="form-label">Tema de ponencia *</label>
+          <input type="text" id="f-tema" class="form-input" placeholder="Ej: Social Media" required />
+        </div>
+        <div class="form-group">
+          <label for="f-bio" class="form-label">Bio corta (40-60 palabras) *</label>
+          <textarea id="f-bio" class="form-input form-textarea" rows="4" placeholder="Breve descripción profesional…" required></textarea>
+          <small class="form-hint" id="bio-counter">0 palabras</small>
+        </div>
+        <div class="form-group">
+          <label for="f-linkedin" class="form-label">LinkedIn (URL)</label>
+          <input type="url" id="f-linkedin" class="form-input" placeholder="https://linkedin.com/in/…" />
+        </div>
+        <div class="form-group">
+          <label for="f-instagram" class="form-label">Instagram (URL)</label>
+          <input type="url" id="f-instagram" class="form-input" placeholder="https://instagram.com/…" />
+        </div>
+        <div class="form-group">
+          <label for="f-color" class="form-label">Color de acento</label>
+          <div class="color-picker-row">
+            <input type="color" id="f-color" class="form-color" value="#FFD700" />
+            <span id="f-color-label">#FFD700</span>
+          </div>
+        </div>
+
+        <p class="form-error" id="form-error" hidden>Por favor completa todos los campos obligatorios.</p>
+        <p class="form-success" id="form-success" hidden>✅ Ponente añadido correctamente.</p>
+
+        <div class="form-actions">
+          <button class="btn btn--ghost" id="form-cancel">Cancelar</button>
+          <button class="btn btn--primary" id="form-submit">Guardar Ponente</button>
+        </div>
+
+        <!-- Sección gestión de ponentes guardados -->
+        <div class="saved-ponentes" id="saved-ponentes-section">
+          <h3 class="saved-title">Ponentes en LocalStorage</h3>
+          <ul id="saved-ponentes-list" class="saved-list"></ul>
+          <button class="btn btn--danger" id="clear-storage" style="margin-top:1rem;font-size:0.8rem;">🗑 Limpiar LocalStorage</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="utils.js"></script>
+</body>
+</html>
